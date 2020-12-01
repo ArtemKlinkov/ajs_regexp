@@ -56,10 +56,10 @@ test('should return true for "IVAN"', () => {
   expect(Validator.validateUsername('IVAN')).toBe(true);
 });
 
-test('should return false for "iv-an"', () => {
+test('should return true for "iv-an"', () => {
   expect(Validator.validateUsername('iv-an')).toBe(true);
 });
 
-test('should return false for "iv_a_n"', () => {
+test('should return true for "iv_a_n"', () => {
   expect(Validator.validateUsername('iv_a_n')).toBe(true);
 });
