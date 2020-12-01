@@ -36,10 +36,6 @@ test('should return false for "ivan!"', () => {
   expect(Validator.validateUsername('ivan!')).toBe(false);
 });
 
-test('should return false for "iv-an"', () => {
-  expect(Validator.validateUsername('iv-an')).toBe(false);
-});
-
 test('should return false for "i9999van"', () => {
   expect(Validator.validateUsername('i9999van')).toBe(false);
 });
